@@ -8,6 +8,7 @@ import {
 import Home from './Components/Home/Home';
 import NoMatch from './Components/NoMatch/NoMatch';
 import FriendDetail from './Components/FriendDetail/FriendDetail';
+import CountryDetail from './Components/CountryDetail/CountryDetail';
 
 
 function App() {
@@ -22,6 +23,9 @@ function App() {
     </Route>
     <Route path="/friend/:friendId" >
      <FriendDetail></FriendDetail>
+    </Route>
+    <Route path="/country/:countryName">
+      <CountryDetail></CountryDetail>
     </Route>
     <Route exact path="/">
     <Home/>
