@@ -12,29 +12,28 @@ import CountryDetail from './Components/CountryDetail/CountryDetail';
 
 
 function App() {
- 
+
   return (
     <div className="App">
-<Router>
-  <Switch>
- 
-    <Route path="/home">
-    <Home/>
-    </Route>
-    <Route path="/friend/:friendId" >
-     <FriendDetail></FriendDetail>
-    </Route>
-    <Route path="/country/:countryName">
-      <CountryDetail></CountryDetail>
-    </Route>
-    <Route exact path="/">
-    <Home/>
-    </Route>
-    <Route path="*">
-      <NoMatch/>
-      </Route>
-  </Switch>
-</Router>
+      <Router>
+        <Switch>
+          <Route path="/home">
+            <Home />
+          </Route>
+          <Route path="/friend/:friendId" >
+            <FriendDetail></FriendDetail>
+          </Route>
+          <Route path="/country/:countryName">
+            <CountryDetail></CountryDetail>
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="*">
+            <NoMatch />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
